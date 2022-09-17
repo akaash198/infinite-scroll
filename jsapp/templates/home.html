@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Scroll</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <!--title-->
+    <h1>Infinite Scroll</h1>
+    <!--loader-->
+    <div class="loader" id="loader" >
+        <img src="{% static 'images/loader.svg' %}" alt="Light">
+    </div>
+    <!--image container-->
+    <div class="image-container" id="image-container">
+    </div>
+
+
+    <!-- Script -->
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>
